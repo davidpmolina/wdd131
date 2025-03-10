@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-/* Color Scheme (Feel free to customize) */
+
 :root {
-    --primary-color: #2c3e50; /* Dark blue-gray */
-    --secondary-color: #3498db; /* Blue */
-    --accent-color: #e74c3c; /* Red */
-    --background-color: #f4f4f4; /* Light gray */
-    --text-color: #333; /* Dark gray */
+    --primary-color: #2c3e50; 
+    --secondary-color: #3498db; 
+    --accent-color: #e74c3c; 
+    --background-color: #f4f4f4; 
+    --text-color: #333; 
     --link-color: var(--secondary-color);
 }
 
