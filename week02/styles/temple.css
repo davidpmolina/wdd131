@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Color Scheme (Feel free to customize) */
+:root {
+    --primary-color: #2c3e50; /* Dark blue-gray */
+    --secondary-color: #3498db; /* Blue */
+    --accent-color: #e74c3c; /* Red */
+    --background-color: #f4f4f4; /* Light gray */
+    --text-color: #333; /* Dark gray */
+    --link-color: var(--secondary-color);
+}
+
+body {
+    font-family: 'Acme', sans-serif; /* Added font from Google Fonts */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Needed for absolute positioning of the button */
+}
+
+nav {
+    display: none; /* Hide on mobile */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+nav.open {
+    display: flex; /* Show when open class is added */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0; /* Removing margin to stack them */
+    display: block; /* Stack the nav links */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main figure {
+    margin: 1rem;
+}
+
+main figure img {
+    width: 100%;
+    display: block;
+}
+
+main figure figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#menuButton {
+    display: block; /* Show on mobile */
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menuButton.open {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    #menuButton {
+        display: none; /* Hide on larger screens */
+    }
+
+    #primaryNav {
+        display: flex; /* Show on larger screens */
+        flex-direction: row; /* Horizontal navigation */
+        width: auto;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 0.5rem; /* Add margin back for horizontal spacing */
+    }
+}
+
+/* temples-large.css */
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+    }
+}
