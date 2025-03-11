@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'Acme', sans-serif; /* Added font from Google Fonts */
+    font-family: 'Acme', sans-serif; 
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -23,11 +23,11 @@ header {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: relative; /* Needed for absolute positioning of the button */
+    position: relative; 
 }
 
 nav {
-    display: none; /* Hide on mobile */
+    display: none; 
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -35,15 +35,15 @@ nav {
 }
 
 nav.open {
-    display: flex; /* Show when open class is added */
+    display: flex; 
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    margin: 0; /* Removing margin to stack them */
-    display: block; /* Stack the nav links */
+    margin: 0; 
+    display: block; 
     transition: background-color 0.3s ease;
 }
 
@@ -78,7 +78,7 @@ main figure figcaption {
 
 main {
     display: grid;
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr; 
     gap: 1rem;
 }
 
@@ -90,7 +90,7 @@ footer {
 }
 
 #menuButton {
-    display: block; /* Show on mobile */
+    display: block; 
     background: transparent;
     border: none;
     font-size: 1.5rem;
@@ -106,27 +106,27 @@ footer {
     border-radius: 5px;
 }
 
-@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+@media (min-width: 768px) { 
     #menuButton {
-        display: none; /* Hide on larger screens */
+        display: none; 
     }
 
     #primaryNav {
-        display: flex; /* Show on larger screens */
-        flex-direction: row; /* Horizontal navigation */
+        display: flex; 
+        flex-direction: row; 
         width: auto;
         justify-content: center;
     }
 
     nav a {
         display: inline-block;
-        margin: 0 0.5rem; /* Add margin back for horizontal spacing */
+        margin: 0 0.5rem; 
     }
 }
 
-/* temples-large.css */
+
 @media (min-width: 1200px) {
     main {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
