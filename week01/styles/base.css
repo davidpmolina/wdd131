@@ -1,7 +1,6 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-/* Reset default margins and paddings */
+
 *,
 *::before,
 *::after {
@@ -10,16 +9,16 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: 'Acme', Arial, sans-serif;
     background-color: #f4f7fc;
     color: #333;
     line-height: 1.6;
-    font-size: 16px; /* Base font size */
+    font-size: 16px; 
 }
 
-/* Header styling */
+
 h1 {
     text-align: center;
     background-color: rgb(0, 20, 34);
@@ -30,7 +29,7 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Paragraph styling */
+
 p {
     text-align: center;
     font-size: 1.2rem;
@@ -38,24 +37,24 @@ p {
     color: #555;
 }
 
-/* Navigation container styling */
+
 nav {
     margin: 0 auto 2rem;
     max-width: 90vw;
     margin-top: 2rem;
 }
 
-/* Main content container */
+
 main {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 2rem;
     background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border-radius: 8px;
 }
 
-/* Navigation styling (Flexbox) */
+
 .navigation {
     list-style: none;
     display: flex;
@@ -66,12 +65,12 @@ main {
     overflow: hidden;
 }
 
-/* Styling for each navigation list item */
+
 .navigation li {
     flex: 1 1 auto;
 }
 
-/* Styling for navigation links */
+
 .navigation a {
     display: block;
     color: #eee;
@@ -83,33 +82,33 @@ main {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for navigation links */
+
 .navigation a:hover {
-    background-color: #ffcc00; /* Highlight background on hover */
-    color: #333; /* Change text color on hover */
-    font-weight: 700; /* Make text bold */
-    transform: scale(1.1); /* Slight scale increase for emphasis */
-    text-decoration: underline; /* Add underline on hover */
-    text-decoration-color: #333; /* Set underline color */
+    background-color: #ffcc00; 
+    color: #333; 
+    font-weight: 700; 
+    transform: scale(1.1); 
+    text-decoration: underline; 
+    text-decoration-color: #333; 
 }
 
-/* Adding a more subtle hover effect on active and focused states */
+
 .navigation a:focus,
 .navigation a:active {
-    background-color: #ffcc00; /* Background stays the same */
+    background-color: #ffcc00; 
     color: #333;
-    outline: none; /* Remove default outline */
+    outline: none; 
 }
 
-/* Container for both cards */
+
 .card-container {
-    display: flex; /* Aligns cards side by side */
-    gap: 2rem; /* Space between the cards */
-    justify-content: center; /* Centers the cards horizontally */
-    margin-top: 2rem; /* Space above the cards */
+    display: flex; 
+    gap: 2rem; 
+    justify-content: center; 
+    margin-top: 2rem; 
 }
 
-/* Styling for each card */
+
 .card {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -117,32 +116,32 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Stack header on top */
-    gap: 2rem; /* Space between header and content */
-    width: 100%; /* Ensure full width */
-    max-width: 800px; /* Maximum width to prevent it from growing too large */
-    margin: auto; /* Centers the card on the page */
+    flex-direction: column; 
+    gap: 2rem; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: auto; 
     overflow-wrap: break-all;
 }
     
 
-/* Header styling inside cards */
+
 .card header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     border-radius: 8px 8px 0 0;
     text-align: center;
-    display: block; /* Ensure header stays as a block element */
-    width: 100%; /* Ensure header takes full width */
+    display: block; 
+    width: 100%; 
 }
 
-/* Styling for the images inside the card */
+
 .card img {
     width: 150px;
     height: auto;
-    object-fit: cover;           /* Ensure the image fills the space without distortion */
-    object-position: center;     /* Position the image in the center */
+    object-fit: cover;          
+    object-position: center;     
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -155,7 +154,7 @@ main {
 }
 
 .card p {
-    flex-grow: 1; /* Let the text take up remaining space */
+    flex-grow: 1; 
     text-align: justify;
 }
 
@@ -165,46 +164,46 @@ main {
 }
 
 .webdevres {
-    list-style-type: disc; /* Keeps the bullet points */
-    padding-left: 20px; /* Adds some space to the left of the bullets */
+    list-style-type: disc; 
+    padding-left: 20px; 
 }
 
 .webdevres li {
-    font-size: 18px; /* Makes the text bigger */
-    margin-bottom: 15px; /* Adds a gap between each list item */
+    font-size: 18px; 
+    margin-bottom: 15px; /
 }
 
 .webdevres a {
     text-decoration: none;
-    color: #383838; /* Adjust the color of the links */
-    padding-left: 10px; /* Adds a gap before each text */
+    color: #383838; 
+    padding-left: 10px; 
 }
 
 .webdevres a:hover {
-    color: #007bff; /* Change color on hover (blue in this case) */
+    color: #007bff; 
 }
 
 
 
 
-/* Responsive design for mobile view */
+
 @media (max-width: 768px) {
     .navigation {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
     }
 
     .navigation a {
-        padding: 1rem; /* Maintain consistent padding on mobile */
-        font-size: 0.9rem; /* Slightly smaller font size for better fit */
+        padding: 1rem; 
+        font-size: 0.9rem; 
     }
 
-    /* Stack cards vertically on smaller screens */
+    
     .card-container {
-        flex-direction: column; /* Stack cards vertically */
-        gap: 1rem; /* Reduce space between the cards */
+        flex-direction: column; 
+        gap: 1rem; 
     }
 
     .card {
-        width: 100%; /* Cards take up full width in mobile view */
+        width: 100%; 
     }
 }
