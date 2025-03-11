@@ -121,7 +121,7 @@ main {
     width: 100%; 
     max-width: 800px; 
     margin: auto; 
-    overflow-wrap: break-all;
+    word-break: break-all;
 }
     
 
