@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines</title>
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/place-small.css" media="(max-width: 767px)">
+</head>
+<body>
+    <header>
+        <div class="logo">Philippines</div>
+        <nav> </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/large-image.webp" media="(min-width: 768px)">
+                <img src="images/small-image.webp" alt="Hero Image">
+            </picture>
+        </section>
+        <section class="content">
+            <div class="data-section">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> <span>300,000 km²</span></p>
+                <p><strong>Population:</strong> <span>Approximately 116.8 million</span></p>
+                <p><strong>Capital:</strong> <span>Manila</span></p>
+                <p><strong>Languages:</strong> <span>Filipino, English</span></p>
+                <p><strong>Currency:</strong> <span>Philippine Peso (PHP)</span></p>
+                <p><strong>Time Zone:</strong> <span>PST (Philippine Standard Time) UTC+8</span></p>
+                <p><strong>Calling Code:</strong> <span>+63</span></p>
+                <p><strong>Internet TLD:</strong> <span>.ph</span></p>
+            </div>
+            <div class="weather-section">
+                <h2>Weather</h2>
+                <p><strong>Temperature:</strong> <span id="temp">25</span>°C</p>
+                <p><strong>Wind Speed:</strong> <span id="wind">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | 🤘David Molina 🤘Philippines | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

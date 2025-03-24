@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark gray text */
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #F0F0F0; /* Light gray header */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid; /* Set a solid border with no color */
+    border-image: linear-gradient(to right, #0038A8, #CE1126, #FFC20E) 1; /* Apply gradient to border */
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #0038A8, #CE1126, #FFC20E);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    color: transparent; /* Standard property */
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.data-section,
+.weather-section {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 5px solid transparent; /* Transparent border with thickness */
+    border-image: linear-gradient(to right, #0038A8, #CE1126, #FFC20E) 1; /* Apply gradient to border */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.data-section h2,
+.weather-section h2 {
+    border-bottom: 2px solid #ccc; /* Add a bottom border */
+    padding-bottom: 5px; /* Add some padding below the heading */
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to right, #0038A8, #CE1126, #FFC20E); /* Blue, Red, Yellow gradient */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Make text white for better visibility on the gradient background */
+}

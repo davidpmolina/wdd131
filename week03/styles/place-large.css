@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark gray text */
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #F0F0F0; /* Light gray header */
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid; /* Set a solid border with no color */
+    border-image: linear-gradient(to right, #0038A8, #CE1126, #FFC20E) 1; /* Apply gradient to border */
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #0038A8, #CE1126, #FFC20E);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    color: transparent; /* Standard property */
+}
+
+main {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.data-section,
+.weather-section {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+}
+
+.data-section h2,
+.weather-section h2 {
+    background-color: #0038A8; /* Blue heading background */
+    color: #FFFFFF; /* White heading text */
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.weather-section h2::after {
+    content: " 🌤️";
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.data-section h2::after {
+    content: " 🇵🇭";
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.data-section p,
+.weather-section p {
+    margin-bottom: 8px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.data-section {
+    top: 30px;
+    left: 20px;
+    width: 300px;
+}
+
+.weather-section {
+    bottom: 30px;
+    right: 20px;
+    width: 250px;
+}
+
+footer {
+    background: linear-gradient(to right, #0038A8, #CE1126, #FFC20E); /* Blue, Red, Yellow gradient */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Make text white for better visibility on the gradient background */
+}
