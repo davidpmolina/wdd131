@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Images</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loaded Images</h1>
+    </header>
+    <div style="height: 1000px; background-color: lightblue;"></div>
+    <main>
+
+        <picture>
+            <img src="https://fastly.picsum.photos/id/729/400/600.jpg?hmac=rygX8Gs7ky44F0Sa4zo924dXOgdw-bDxdwI5gNrLzKc" alt="Image 1" loading="lazy" width="400" height="600" class="fade-in">
+        </picture>
+        <div style="height: 200px;"></div>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/487/400/620.jpg?hmac=6TesgEXq_3-qlr8RDjCwzCy2zTQtcawq1PiZ9p5UwqU" alt="Image 2" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/915/400/640.jpg?hmac=MijCj8fEMIvouueWfNjLmDTP8uolrpuYnfomzniT6TQ" alt="Image 3" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/585/400/660.jpg?hmac=oQ3QlbkY-x8-mJfpJjzAgg6rMs2TucvgxQGK39q5YKA" alt="Image 4" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/944/400/680.jpg?hmac=BlNEbE-_7KmSTxGmETAn80YXW-awOndh7j8uojnb8yA" alt="Image 5" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/969/400/700.jpg?hmac=780AA4tWXb9oEvf8mab7AGWSwvE-tO_aEczcBtMIZgw" alt="Image 6" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+        <picture>
+            <img src="https://fastly.picsum.photos/id/397/400/720.jpg?hmac=VCL5reJCdXadlGhuwSIIAvaqdSH_6u_46QVD8DoqeLg" alt="Image 7" loading="lazy" class="fade-in">
+        <div style="height: 200px;"></div>
+        </picture>
+
+    </main>
+    <footer>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
