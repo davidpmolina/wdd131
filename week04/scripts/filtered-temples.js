@@ -67,7 +67,7 @@ const temples = [
         location: "Tacloban, Philippines",
         dedicated: "2024, April, 21",
         area: 45435,
-        imageUrl: "temple_images/tacloban.jpg"
+        imageUrl: "temple_images/Tacloban.jpg"
     }
 ];
 
