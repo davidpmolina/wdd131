@@ -1,0 +1,39 @@
+@media (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin: 4rem auto;
+    }
+
+    main h1 {
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    body {
+        font-size: 1.1rem;
+        background: linear-gradient(to bottom, var(--background-color), #e0e0e0);
+    }
+
+    main figure {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    main figure img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        border: 2px solid lightgrey;
+    }
+
+    main figure img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+
+    main figure h3,
+    main figure p {
+        color: var(--temple-card-text-color); /* Add the variable for consistent contrast */
+    }
+}

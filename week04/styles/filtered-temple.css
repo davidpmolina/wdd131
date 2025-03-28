@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f4f4f4;
+    --text-color: #333; /* Default text color */
+    --link-color: var(--secondary-color);
+    --temple-card-text-color: #555; /* Temple card text color for contrast */
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main figure {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+main figure img {
+    width: 100%;
+    display: block;
+}
+
+main figure h3,
+main figure p {
+    text-align: left;
+    margin: 0.5rem 0;
+    padding: 0;
+    color: var(--temple-card-text-color); /* Use the new variable */
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#menuButton {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menuButton.open {
+    background-color: rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    #menuButton {
+        display: none;
+    }
+
+    #primaryNav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
