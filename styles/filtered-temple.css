@@ -1,12 +1,13 @@
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --secondary-color: #252525;
     --accent-color: #e74c3c;
-    --background-color: #f4f4f4;
-    --text-color: #333; 
+    --background-color: #f0f0f0; /* Slightly darker background */
+    --text-color: #222; /* Darker text color */
     --link-color: var(--secondary-color);
-    --temple-card-text-color: #555;
+    --temple-card-text-color: #333; /* Even darker temple card text */
 }
+
 
 body {
     font-family: 'Acme', sans-serif;
@@ -68,20 +69,27 @@ main h2 {
     margin-bottom: 1.5rem;
     color: var(--text-color);
     font-size: 2rem;
-    grid-column: 1 / -1; /* This is the fix */
+    grid-column: 1 / -1;
 }
 
 main figure {
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     margin: 1rem;
+    overflow: hidden; /* Added overflow hidden */
 }
 
 main figure img {
     width: 100%;
     display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Added transition */
+}
+
+main figure img:hover {
+    transform: scale(1.05); /* Added hover effect */
+    opacity: 0.9; /* Added hover effect */
 }
 
 main figure h3,
@@ -136,6 +144,17 @@ footer {
 
 @media (min-width: 1200px) {
     main {
-        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin: 4rem auto;
+    }
+
+    main h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+        font-size: 2rem;
+        grid-column: 1 / -1;
     }
 }
