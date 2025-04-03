@@ -11,6 +11,13 @@
         letter-spacing: 1px;
     }
 
+    main h2 {
+        text-align: center;
+        margin-bottom: 1.5rem; /* Adjust as needed */
+        color: var(--text-color); /* Use your text color variable */
+        font-size: 2rem; /* Adjust font size as desired */
+    } 
+
     body {
         font-size: 1.1rem;
         background: linear-gradient(to bottom, var(--background-color), #e0e0e0);
