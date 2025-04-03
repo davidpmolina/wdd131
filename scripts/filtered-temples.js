@@ -76,6 +76,12 @@ const navLinks = document.querySelectorAll('#primaryNav a');
 
 function displayTemples(templeList) {
     templeGrid.innerHTML = '';
+
+    
+    const h2Element = document.createElement('h2');
+    h2Element.textContent = 'House Of The Lord';
+    templeGrid.appendChild(h2Element);
+
     templeList.forEach(temple => {
         const figure = document.createElement('figure');
         const img = document.createElement('img');
