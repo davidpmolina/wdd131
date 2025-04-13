@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Website Title]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-mobile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo-nav"> <!- New container -->
+            <div id="logo">
+                <img src="images/valo.png" alt="Valorant Logo">
+            </div>
+            <nav id="main-nav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger">
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <button id="search-button" type="submit">Search</button>
+            </div>
+            <button id="play-now-button" type="button">Play Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h1>Contact Us</h1>
+            <p>Please fill out the form below to get in touch with us.</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>You can also reach us through the following:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:[Your Email Address]">[Your Email Address]</a></li>
+                <li><strong>Phone:</strong> [Your Phone Number]</li>
+                <li><strong>Address:</strong> [Your Physical Address - Optional]</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> 🎯 David Molina 🎯 <a href="references.html">References</a></p>
+        <p id="lastModified"></p>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
