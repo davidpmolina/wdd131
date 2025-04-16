@@ -363,7 +363,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: sticky; /* Or fixed, depending on desired behavior */
     bottom: 0;
     width: 100%;
 }
