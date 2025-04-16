@@ -78,13 +78,14 @@ header {
 }
 
 #search-button {
-    background-color: #d88200;
+    background-color: #cc7a00b2;
     color: white;
     border: none;
     padding: 0.5em 1em;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
 #search-button:hover {
@@ -92,7 +93,7 @@ header {
 }
 
 #play-now-button {
-    background-image: linear-gradient(to right, #FF4655, #e26009); /* Example: Red to Orange gradient */
+    background-image: linear-gradient(to right, #a82c37, #944e1f); /* Example: Red to Orange gradient */
     color: white; /* Adjust text color for better contrast */
     border: none;
     padding: 0.5em 1.5em; /* Adjust padding if needed */
@@ -100,10 +101,11 @@ header {
     cursor: pointer;
     transition: background-image 0.3s ease; /* Apply transition to the gradient */
     font-size: 1.1em; /* Slightly increase font size for better visibility */
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.692);
 }
 
 #play-now-button:hover {
-    background-image: linear-gradient(to right, #b6000f, #ff9900); /* Darker red to lighter orange on hover */
+    background-image: linear-gradient(to right, #74000a, #945900); /* Darker red to lighter orange on hover */
 }
 
 #play-now-button:hover {
