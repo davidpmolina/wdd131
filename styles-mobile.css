@@ -87,8 +87,15 @@
         width: 100%;
     }
 
+    .hero-image {
+        width: 100%; /* Make it full width of the main container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Prevent extra bottom spacing */
+    }
+
     .hero {
         padding: 20px;
+        width: 90%;
     }
 
     .hero h1 {

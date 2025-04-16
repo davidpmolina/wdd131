@@ -4,13 +4,13 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #1E1E1E;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #141414;
     color: white;
     padding: 1em 20px;
     display: flex;
@@ -74,61 +74,255 @@ header {
 #search-bar {
     padding: 0.5em;
     border: none;
-    border-radius: 5px 0 0 5px;
+    border-radius: 20px 0 0 20px;
 }
 
 #search-button {
-    background-color: #5cb85c;
+    background-color: #d88200;
     color: white;
     border: none;
     padding: 0.5em 1em;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 20px 20px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #search-button:hover {
-    background-color: #4cae4c;
+    background-color: #FF9800;
 }
 
 #play-now-button {
-    background-color: #007bff;
-    color: white;
+    background-image: linear-gradient(to right, #FF4655, #e26009); /* Example: Red to Orange gradient */
+    color: white; /* Adjust text color for better contrast */
     border: none;
-    padding: 0.8em 1.5em;
-    border-radius: 5px;
+    padding: 0.5em 1.5em; /* Adjust padding if needed */
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-image 0.3s ease; /* Apply transition to the gradient */
+    font-size: 1.1em; /* Slightly increase font size for better visibility */
 }
 
 #play-now-button:hover {
-    background-color: #0056b3;
+    background-image: linear-gradient(to right, #b6000f, #ff9900); /* Darker red to lighter orange on hover */
+}
+
+#play-now-button:hover {
+    background-color: #b6000f;
 }
 
 main {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fallback color if image fails to load */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed to position the background image */
+    overflow: hidden; /* To contain the blurry effect within the main area */
+    display: flex;
+    flex-direction: column; /* Stack image, hero, video, introduction */
+    align-items: center; /* Center items horizontally */
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/valorant_background.jpg'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Place the background image behind the content */
+}
+
+#about-us {
+    padding: 40px;
+    background-color: #f9f9f980; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Add some space below the section */
+}
+
+#about-us h1 {
+    color: #000000; /* Valorant-like orange */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+#about-us p {
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+#our-mission {
+    background-color: #ffffffbd; /* White background for the mission section */
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-left: 5px solid #FF4655; /* Valorant-like red accent */
+}
+
+#our-mission h2 {
+    color: #1b1b1b;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#our-mission p {
+    color: #000000;
+}
+
+#our-values {
+    background-color: #ffffffbd; /* White background for the values section */
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+#our-values h2 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#our-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+#our-values li {
+    color: #000000;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee; /* Light divider between list items */
+}
+
+#our-values li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+#our-values strong {
+    color: #d88200; /* Highlight the values */
+    font-weight: bold;
+}
+
+
+#contact-form {
+    margin-bottom: 30px; /* Space between form and contact info */
+    padding: 30px;
+    background-color: var(--valorant-dark); /* Dark background for the form */
+    border-radius: 8px;
+}
+
+#contact-form h1,
+#contact-form p {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-form div {
+    margin-bottom: 15px;
+}
+
+#contact-form label {
+    display: block;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: calc(100% - 12px); /* Adjust for padding/border */
+    padding: 8px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 4px;
+    background-color: #f1f1f1; /* Dark input background */
+    color: var(--valorant-text-primary);
+}
+
+#contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}   
+
+#contact-form button[type="submit"] {
+    background-color: #FF4655;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: darken(var(--valorant-primary), 10%);
+}
+
+#contact-info {
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+}
+
+#contact-info h2 {
+    color: black; /* Highlight the heading */
+    margin-bottom: 15px;
+}
+
+#contact-info p,
+#contact-info li {
+    color: black;
+    line-height: 1.6;
+}
+
+#contact-info strong {
+    color: black;
+}
+
+#contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+#contact-info a:hover {
+    text-decoration: underline;
+}
+
+.hero-image {
+    width: 62%; /* Make it full width of the main container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra bottom spacing */
 }
 
 .hero {
-    background-color: #e9ecef;
-    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.753);
     text-align: center;
-    border-radius: 8px;
+    border-radius: 0 0 10px 10px;
     margin-bottom: 20px;
+    width: 60%;
+    padding: 40px 20px;
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    
 }
 
 .hero p {
     font-size: 1.1em;
-    color: #666;
+    color: rgb(0, 0, 0);
+    
 }
 
 #introduction {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -138,16 +332,32 @@ main {
 #introduction h2 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: #333;
+    color: #272727;
 }
 
 #introduction p {
-    color: #555;
+    color: #272727;
     line-height: 1.7;
 }
 
+.video-container {
+    max-width: 960px; /* Or your desired max width */
+    width: 95%; /* Make it slightly wider on smaller screens */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Or your video's actual aspect ratio */
+    border: 0;
+    height: auto;
+    border-radius: 10px;
+}
+
 footer {
-    background-color: #333;
+    background-color: #141414;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -167,109 +377,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* styles-mobile.css - Styles for Mobile Devices */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo-nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    #logo {
-        margin-right: 20px;
-    }
-
-    #main-nav label {
-        display: block; /* Show hamburger menu */
-        font-size: 2em;
-        cursor: pointer;
-        margin-left: auto; /* Push hamburger to the right */
-    }
-
-    #main-nav input[type="checkbox"] {
-        display: none; /* Hide the checkbox */
-    }
-
-    #nav-list {
-        display: none; /* Hide navigation list by default */
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 70px; /* Adjust based on header height */
-        left: 0;
-        z-index: 10;
-    }
-
-    #nav-list.open {
-        display: flex; /* Show navigation list when checkbox is checked */
-    }
-
-    #nav-list li {
-        margin: 0;
-        border-bottom: 1px solid #555;
-    }
-
-    #nav-list li:last-child {
-        border-bottom: none;
-    }
-
-    #nav-list li a {
-        display: block;
-        padding: 1em;
-        text-align: center;
-    }
-
-    #main-nav input[type="checkbox"]:checked ~ #nav-list {
-        display: flex; /* Show nav list when hamburger is clicked (checkbox checked) */
-    }
-
-    .header-right {
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    #search-container {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    #search-bar,
-    #search-button {
-        width: 100%;
-        border-radius: 5px;
-    }
-
-    #search-bar {
-        border-radius: 5px 5px 0 0;
-    }
-
-    #search-button {
-        border-radius: 0 0 5px 5px;
-    }
-
-    #play-now-button {
-        width: 100%;
-    }
-
-    .hero {
-        padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    #introduction h2 {
-        font-size: 1.75em;
-    }
 }
